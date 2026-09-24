@@ -50,6 +50,12 @@ namespace Assigment.Net.OOP5
             //New independent object are created for reference-type membersm.
             #endregion
 
+            #region e
+            //e) Give one situation where Deep Copy would be safer than Shallow Copy.
+            //When a class contains a reference object like DeliveryAddress
+            //and you want to update the new shipment's address without modifying the original shipment's address.
+            #endregion
+
             #endregion
         }
     }
