@@ -129,6 +129,11 @@ namespace Assigment.Net.OOP5
             //allow multiple developers to work on the same class simultaneously.
             #endregion
 
+            #region c
+            //c) What is a Partial Method ?
+            //A method declared in one part of a partial class, implemented in another part of the same class.
+            #endregion
+
             #endregion
         }
     }
