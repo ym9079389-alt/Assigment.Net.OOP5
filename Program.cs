@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Drawing;
 using System.Net;
+using System.Reflection.Metadata;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assigment.Net.OOP5
@@ -93,6 +94,11 @@ namespace Assigment.Net.OOP5
             #region a
             //a) What is an Extension Method ?
             //A method that allows you to add new functions to an existing type without modifying its original code.
+            #endregion
+
+            #region b
+            //b) What keyword must be used in the first parameter of an extension method ?
+            //this
             #endregion
 
             #endregion
