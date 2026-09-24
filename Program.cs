@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel;
 using System.Drawing;
 using System.Net;
+using System.Numerics;
 using System.Reflection.Metadata;
+using System.Timers;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assigment.Net.OOP5
@@ -112,6 +114,16 @@ namespace Assigment.Net.OOP5
             #endregion
 
             #endregion
-    }
+
+            #region Partial Classes and Partial Methods
+
+            #region a
+            //a) What is a Partial Class ?
+            //A class can be split across multiple physical files,
+            //which are combined into a single class at compile time.
+            #endregion
+
+            #endregion
+        }
     }
 }
