@@ -66,6 +66,12 @@ namespace Assigment.Net.OOP5
             //instance field belongs to a specific object.
             #endregion
 
+            #region b
+            //b) What is a static method? Can a static method directly access instance members ?
+            //static method that belongs to the class and is called using the class name.
+            //It cannot directly access instance members without an object instance.
+            #endregion
+
             #endregion
         }
     }
