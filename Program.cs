@@ -35,6 +35,11 @@ namespace Assigment.Net.OOP5
             //while reference-type fields only have their references copied.
             #endregion
 
+            #region b
+            //b) What is a Deep Copy ?
+            //Creating a new object and duplicating all value types.
+            #endregion
+
             #endregion
         }
     }
