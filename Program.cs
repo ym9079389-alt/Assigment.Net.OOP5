@@ -106,7 +106,12 @@ namespace Assigment.Net.OOP5
             //Inside a static class
             #endregion
 
+            #region d
+            //d) Can an extension method access private members of the class it extends?
+            //No, it can only access public members of the extended class.
             #endregion
-        }
+
+            #endregion
+    }
     }
 }
