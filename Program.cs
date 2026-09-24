@@ -45,6 +45,11 @@ namespace Assigment.Net.OOP5
             //Both the original and copied objects share the same reference-type members.
             #endregion
 
+            #region d
+            //d) What happens to reference-type members when a Deep Copy is created?
+            //New independent object are created for reference-type membersm.
+            #endregion
+
             #endregion
         }
     }
