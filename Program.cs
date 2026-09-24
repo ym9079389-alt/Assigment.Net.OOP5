@@ -19,7 +19,13 @@ namespace Assigment.Net.OOP5
             //No.It only copies the reference in the Heap, so Both variables point to the same location in memory.
             #endregion
 
-            
+            #region c
+            //c) What is the difference between copying an object and copying its reference ?
+            //Copying Reference: Creates a new variable pointing to the same object.
+            //Copying Object: Creates a new object in memory containing a copy of the original object.
+            #endregion
+
+           
 
             #endregion
         }
