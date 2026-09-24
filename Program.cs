@@ -40,6 +40,11 @@ namespace Assigment.Net.OOP5
             //Creating a new object and duplicating all value types.
             #endregion
 
+            #region c
+            //c) What happens to reference-type members when a Shallow Copy is created?
+            //Both the original and copied objects share the same reference-type members.
+            #endregion
+
             #endregion
         }
     }
