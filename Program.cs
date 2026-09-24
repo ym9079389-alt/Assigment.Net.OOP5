@@ -101,6 +101,11 @@ namespace Assigment.Net.OOP5
             //this
             #endregion
 
+            #region c
+            //c) Where must an extension method be declared ?
+            //Inside a static class
+            #endregion
+
             #endregion
         }
     }
