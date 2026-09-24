@@ -25,7 +25,15 @@ namespace Assigment.Net.OOP5
             //Copying Object: Creates a new object in memory containing a copy of the original object.
             #endregion
 
-           
+            #endregion
+
+            #region Q2
+
+            #region a
+            //a) What is a Shallow Copy ?
+            //Creating a new object and copying value-type,
+            //while reference-type fields only have their references copied.
+            #endregion
 
             #endregion
         }
