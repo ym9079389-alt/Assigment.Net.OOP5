@@ -9,7 +9,7 @@ namespace Assigment.Net.OOP5
     {
         static void Main(string[] args)
         {
-            #region Q1
+            #region Object Copying
 
             #region a
             //a) What happens when you assign one object variable to another object variable?
@@ -29,7 +29,7 @@ namespace Assigment.Net.OOP5
 
             #endregion
 
-            #region Q2
+            #region Shallow Copy vs Deep Copy
 
             #region a
             //a) What is a Shallow Copy ?
@@ -60,7 +60,7 @@ namespace Assigment.Net.OOP5
 
             #endregion
 
-            #region Q3
+            #region Static Members
 
             #region a
             //a) What is a static field, and how is it different from an instance field ?
@@ -84,6 +84,15 @@ namespace Assigment.Net.OOP5
             //d) What is a static class? Can you create an object from a static class?
             //A class that contains only static members.
             //No.
+            #endregion
+
+            #endregion
+
+            #region Extension Methods
+
+            #region a
+            //a) What is an Extension Method ?
+            //A method that allows you to add new functions to an existing type without modifying its original code.
             #endregion
 
             #endregion
