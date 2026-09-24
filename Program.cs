@@ -57,6 +57,16 @@ namespace Assigment.Net.OOP5
             #endregion
 
             #endregion
+
+            #region Q3
+
+            #region a
+            //a) What is a static field, and how is it different from an instance field ?
+            //A static field belongs to the static class and is shared all instances,
+            //instance field belongs to a specific object.
+            #endregion
+
+            #endregion
         }
     }
 }
