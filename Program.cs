@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.ComponentModel;
+using System.Drawing;
 using System.Net;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -77,6 +78,12 @@ namespace Assigment.Net.OOP5
             //c) What is a static constructor, and when is it executed ?
             //A constructor used to initialize static fields.
             //It is executed automatically only once before the first instance is created or any static member is accessed.
+            #endregion
+
+            #region d
+            //d) What is a static class? Can you create an object from a static class?
+            //A class that contains only static members.
+            //No.
             #endregion
 
             #endregion
