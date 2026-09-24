@@ -123,6 +123,12 @@ namespace Assigment.Net.OOP5
             //which are combined into a single class at compile time.
             #endregion
 
+            #region b
+            //b) Why would a developer split one class into multiple files?
+            //To organize large code,
+            //allow multiple developers to work on the same class simultaneously.
+            #endregion
+
             #endregion
         }
     }
