@@ -14,6 +14,11 @@ namespace Assigment.Net.OOP5
             //Only the reference is copied, not the object itself. Both variables point to the same location in memory.
             #endregion
 
+            #region
+            //Does assigning one object to another create a new object? Explain.
+            //No.It only copies the reference in the Heap, so Both variables point to the same location in memory.
+            #endregion
+
             #endregion
         }
     }
