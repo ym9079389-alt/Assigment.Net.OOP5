@@ -1,5 +1,6 @@
 ﻿using System.Drawing;
 using System.Net;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assigment.Net.OOP5
 {
@@ -70,6 +71,12 @@ namespace Assigment.Net.OOP5
             //b) What is a static method? Can a static method directly access instance members ?
             //static method that belongs to the class and is called using the class name.
             //It cannot directly access instance members without an object instance.
+            #endregion
+
+            #region c
+            //c) What is a static constructor, and when is it executed ?
+            //A constructor used to initialize static fields.
+            //It is executed automatically only once before the first instance is created or any static member is accessed.
             #endregion
 
             #endregion
