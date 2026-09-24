@@ -4,6 +4,7 @@ using System.Net;
 using System.Numerics;
 using System.Reflection.Metadata;
 using System.Timers;
+using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assigment.Net.OOP5
@@ -132,6 +133,11 @@ namespace Assigment.Net.OOP5
             #region c
             //c) What is a Partial Method ?
             //A method declared in one part of a partial class, implemented in another part of the same class.
+            #endregion
+
+            #region d
+            //d) What happens if a declared partial method has no implementation?
+            //The compiler removes the method declaration and all calls to it during compilation.
             #endregion
 
             #endregion
