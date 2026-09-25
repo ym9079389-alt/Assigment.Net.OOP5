@@ -141,6 +141,128 @@ namespace Assigment.Net.OOP5
             #endregion
 
             #endregion
+
+            #region Practical
+            //DeliveryCenter center = new DeliveryCenter("Cairo Center");
+
+            //Console.WriteLine("--- Enter Details for Standard Shipment ---");
+            //Console.Write("Tracking Code: "); string code1 = Console.ReadLine();
+            //Console.Write("Description: "); string desc1 = Console.ReadLine();
+            //Console.Write("Weight: "); decimal.TryParse(Console.ReadLine(), out decimal w1);
+            //Console.Write("Delivery Fee: "); decimal.TryParse(Console.ReadLine(), out decimal f1);
+            //Console.Write("City: "); string city1 = Console.ReadLine();
+            //Console.Write("Street: "); string street1 = Console.ReadLine();
+            //Console.Write("Building Number: "); int.TryParse(Console.ReadLine(), out int b1);
+
+            //DeliveryAddress addr1 = new DeliveryAddress(city1, street1, b1);
+            //StandardShipment standard = new StandardShipment(code1, desc1, w1, f1, addr1);
+            //center.AddShipment(standard);
+            //DeliveryReport report01 = new DeliveryReport();
+            //report01.PrintShipment(standard);
+
+            //Shipment sh01 = standard;
+            //Console.WriteLine(ReferenceEquals(standard, sh01));
+
+            //Shipment copy = standard.CopyShipment();
+            //Console.WriteLine(ReferenceEquals(standard, copy));
+
+            //Console.WriteLine(sh01.ShallowCopy());
+            //Console.WriteLine(sh01.DeepCopy());
+            //sh01.Destination.City = "Alex";
+            //Console.WriteLine(sh01.ShallowCopy());
+            //Console.WriteLine(sh01.DeepCopy());
+
+
+
+
+
+
+
+
+
+
+
+
+
+            #endregion
+
+                DeliveryCenter center = new DeliveryCenter("Cairo Center");
+
+                Console.WriteLine("--- Enter Details for Standard Shipment ---");
+                Console.Write("Tracking Code: "); string code1 = Console.ReadLine();
+                Console.Write("Description: "); string desc1 = Console.ReadLine();
+                Console.Write("Weight: "); decimal.TryParse(Console.ReadLine(), out decimal w1);
+                Console.Write("Delivery Fee: "); decimal.TryParse(Console.ReadLine(), out decimal f1);
+                Console.Write("City: "); string city1 = Console.ReadLine();
+                Console.Write("Street: "); string street1 = Console.ReadLine();
+                Console.Write("Building Number: "); int.TryParse(Console.ReadLine(), out int b1);
+
+                DeliveryAddress addr1 = new DeliveryAddress(city1, street1, b1);
+                StandardShipment standard = new StandardShipment(code1, desc1, w1, f1, addr1);
+                center.AddShipment(standard);
+                DeliveryReport report01 = new DeliveryReport();
+                report01.PrintShipment(standard);
+
+                Console.WriteLine("\n--- Enter Details for Express Shipment ---");
+                Console.Write("Tracking Code: "); string code2 = Console.ReadLine();
+                Console.Write("Description: "); string desc2 = Console.ReadLine();
+                Console.Write("Weight: "); decimal.TryParse(Console.ReadLine(), out decimal w2);
+                Console.Write("Delivery Fee: "); decimal.TryParse(Console.ReadLine(), out decimal f2);
+                Console.Write("Extra Fee: "); decimal.TryParse(Console.ReadLine(), out decimal extraFee);
+                Console.Write("City: "); string city2 = Console.ReadLine();
+                Console.Write("Street: "); string street2 = Console.ReadLine();
+                Console.Write("Building Number: "); int.TryParse(Console.ReadLine(), out int b2);
+
+                
+
+                ITrackable[] trackables = { standard};
+                for (int i = 0; i < 1; i++)
+                {
+                    Console.WriteLine(trackables[i].GetTrackingStatus());
+                }
+
+                IInsurable[] insurables = { standard};
+                for (int i = 0; i < 1; i++)
+                {
+                    Console.WriteLine(insurables[i].CalculateInsurance());
+                }
+
+                DeliveryUtilities.PrintSystemTitle("Object Copying");
+
+                Shipment sh01 = standard;
+                Console.WriteLine($"Reference Assignment: {ReferenceEquals(standard, sh01)}");
+
+                Shipment copy = standard.CopyShipment();
+                Console.WriteLine($"CopyShipment: {ReferenceEquals(standard, copy)}");
+
+                DeliveryUtilities.PrintSystemTitle("Shallow Copy");
+                Shipment shallow = sh01.ShallowCopy();
+                Console.WriteLine($"Original Address: {sh01.Destination.City}");
+                Console.WriteLine($"Copy Address: {shallow.Destination.City}");
+
+                Console.WriteLine("Changing copied shipment address");
+                shallow.Destination.City = "Alex";
+
+                Console.WriteLine($"Original Address: {sh01.Destination.City}");
+                Console.WriteLine($"Copy Address: {shallow.Destination.City}");
+                Console.WriteLine($"Same DeliveryAddress Object: {ReferenceEquals(sh01.Destination, shallow.Destination)}");
+
+
+                sh01.Destination.City = city1;
+
+
+                DeliveryUtilities.PrintSystemTitle("Deep Copy");
+                Shipment deep = sh01.DeepCopy();
+                Console.WriteLine($"Original Address: {sh01.Destination.City}");
+                Console.WriteLine($"Copy Address: {deep.Destination.City}");
+
+                Console.WriteLine("\nChanging copied shipment address...");
+                deep.Destination.City = "Alex";
+
+                Console.WriteLine($"Original Address: {sh01.Destination.City}");
+                Console.WriteLine($"Copy Address: {deep.Destination.City}");
+                Console.WriteLine($"Same DeliveryAddress Object: {ReferenceEquals(sh01.Destination, deep.Destination)}");
+            
         }
     }
 }
