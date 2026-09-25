@@ -160,16 +160,6 @@ namespace Assigment.Net.OOP5
                 DeliveryReport report01 = new DeliveryReport();
                 report01.PrintShipment(standard);
 
-                Console.WriteLine("\n--- Enter Details for Express Shipment ---");
-                Console.Write("Tracking Code: "); string code2 = Console.ReadLine();
-                Console.Write("Description: "); string desc2 = Console.ReadLine();
-                Console.Write("Weight: "); decimal.TryParse(Console.ReadLine(), out decimal w2);
-                Console.Write("Delivery Fee: "); decimal.TryParse(Console.ReadLine(), out decimal f2);
-                Console.Write("Extra Fee: "); decimal.TryParse(Console.ReadLine(), out decimal extraFee);
-                Console.Write("City: "); string city2 = Console.ReadLine();
-                Console.Write("Street: "); string street2 = Console.ReadLine();
-                Console.Write("Building Number: "); int.TryParse(Console.ReadLine(), out int b2);
-
                 
 
                 ITrackable[] trackables = { standard};
